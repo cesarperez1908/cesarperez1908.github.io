@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  text-decoration: none;
+}
+body{
+  width: 100vw;
+  background: transparent url('assets/concrete-texture.png') repeat;
+  overflow-x: hidden;
+}
+header{
+  height: 100vh;
+  background: transparent url(assets/portada/portada.jpg) no-repeat center center;
+  background-size: cover;
+}
+h1{
+  font-family: 'Merriweather', serif;
+  font-size: 8.3vh;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 64vh;
+  left: 7vw;
+  text-transform: uppercase;
+}
+h2{
+  font-family: 'Merriweather', serif;
+  font-size: 5.5vh;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  top: 73vh;
+  left: 7vw;
+}
+.intro p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.3vh;
+  font-weight: 400;
+  width: 60vw;
+  color: #fff;
+  position: absolute;
+  top: 83vh;
+  left: 7vw;
+}
+.navegacion{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.navegacion-container{
+  position: absolute;
+  top: -9vw;
+  left: -26vw;
+  width: 150vw;
+}
+.navegacion-item{
+  width:28vw;
+  height: 130vh;
+  display: inline-block;
+  background-color: blue;
+  border: solid 0.2vw #000;
+  transform: rotateZ(22deg);
+  position: relative;
+  transition: 1s;
+}
+  .navegacion-item:hover{
+    transform: rotateZ(22deg) scale(1.05);
+  }
+.navegacion-item h5{
+  transform: rotateZ(-22deg);
+  font-family: 'Merriweather', serif;
+  font-size: 2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  width: 20vw;
+  left: 3vw;
+}
+
+.navegacion-item:first-child, .navegacion-item:last-child{
+  width: 32vw;
+}
+.navegacion-item:first-child h5{
+  top: 12vw;
+}
+.navegacion-item:nth-child(2) h5{
+  top: 30vw;
+}
+.navegacion-item:nth-child(3) h5{
+  top: 45vw;
+}
+.navegacion-item:last-child h5{
+  top: 65vw;
+}
+
+.capitulo h3{
+  font-family: 'Merriweather', serif;
+  font-size: 3vw;
+  font-weight: 700;
+  width: 60vw;
+  margin: 4vw auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.capitulo h4{
+  font-family: 'Merriweather', serif;
+  font-size: 2.6vw;
+  font-weight: 400;
+  width: 80vw;
+  margin: 3vw auto;
+}
+.capitulo p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7vw;
+  font-weight: 400;
+  width: 80vw;
+  margin: 2vw auto;
+}
+.galeria{
+  width: 100vw;
+  height: 56vw;
+  margin: 2vw auto;
+}
+.galeria.salvador{
+  background: transparent url('assets/galerias/salvador1.jpg') no-repeat center center;
+  background-size: cover;
+  animation-name: salvador;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.galeria.samuel{
+  background: transparent url('assets/galerias/samuel1.jpg') no-repeat center center;
+  background-size: cover;
+  animation-name: samuel;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+.galeria.sitio{
+  background: transparent url('assets/galerias/mixtos1.jpg') no-repeat center center;
+  background-size: cover;
+  animation-name: mixtos;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+}
+iframe{
+  width: 80vw;
+  height: 45vw;
+  display: block;
+  margin: 2vw auto;
+}
+footer{
+  padding: 1.5vw 0;
+  background-color: rgba(23, 65, 74, 0.6);
+  text-align: center;
+}
+footer p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+@keyframes mixtos {
+  16%{
+    background-image: url('assets/galerias/mixtos2.jpg')
+  }
+  32%{
+    background-image: url('assets/galerias/mixtos3.jpg')
+  }
+  48%{
+    background-image: url('assets/galerias/mixtos4.jpg')
+  }
+  64%{
+    background-image: url('assets/galerias/mixtos5.jpg')
+  }
+  80%{
+    background-image: url('assets/galerias/mixtos6.jpg')
+  }
+  99%{
+    background-image: url('assets/galerias/mixtos1.jpg')
+  }
+}
+@keyframes samuel {
+  25%{
+    background-image: url('assets/galerias/samuel2.jpg')
+  }
+  50%{
+    background-image: url('assets/galerias/samuel3.jpg')
+  }
+  75%{
+    background-image: url('assets/galerias/samuel4.jpg')
+  }
+  100%{
+    background-image: url('assets/galerias/samuel1.jpg')
+  }
+}
+@keyframes salvador {
+  20%{
+    background-image: url('assets/galerias/salvador2.jpg')
+  }
+  40%{
+    background-image: url('assets/galerias/salvador3.jpg')
+  }
+  60%{
+    background-image: url('assets/galerias/salvador4.jpg')
+  }
+  80%{
+    background-image: url('assets/galerias/salvador5.jpg')
+  }
+  100%{
+    background-image: url('assets/galerias/salvador1.jpg')
+  }
+}
+
+@media (max-width: 700px){
+  h1{
+    font-size: 6.3vh;
+    top: 60vh;
+    left: 7vw;
+  }
+  h2{
+    font-size: 4.3vh;
+    top: 67vh;
+    left: 7vw;
+  }
+  .intro p{
+    font-size: 2.1vh;
+    width: 80vw;
+    top: 74vh;
+    left: 7vw;
+  }
+  .capitulo h3{
+    font-size: 10vw;
+    width: 90vw;
+    margin: 6vw auto;
+  }
+  .capitulo h4{
+    font-size: 7.5vw;
+    width: 85vw;
+    margin: 5vw auto;
+  }
+  .capitulo p{
+    font-size: 5vw;
+    width: 85vw;
+    margin: 3vw auto;
+  }
+  iframe{
+    width: 100vw;
+    height: 56vw;
+    margin: 6vw auto;
+  }
+  footer {
+    padding: 4.5vw 0;
+  }
+  footer p {
+    font-size: 4.3vw;
+  }
+}
