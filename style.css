@@ -288,6 +288,17 @@ footer p{
     top: 74vh;
     left: 7vw;
   }
+  .home{ 
+   display: none;
+   padding: 5px;
+   background; #E1F7E7;
+   font-size: 20px;
+   color: #0284A8;
+   cursor: pointer;
+   position: fixed;
+   bottom: 5px;
+   right: 5px;
+  }
   .navegacion-container {
     position: absolute;
     top: -6vw;
