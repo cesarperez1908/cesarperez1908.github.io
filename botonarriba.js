@@ -7,7 +7,7 @@ $(document).ready(function(){
 	});
  
 	$(window).scroll(function(){
-		if( $(this).scrollTop() > 0 ){
+		if( $(this).scrollTop() > 100 ){
 			$('.home').slideDown(2000);
 		} else {
 			$('.home').slideUp(2000);
