@@ -146,8 +146,10 @@ h2{
   font-weight: 700;
   width: 60vw;
   margin: 0 auto 4vw;
+  padding: 2vw 20vw;
   text-align: center;
   text-transform: uppercase;
+  background-color: rgba(23, 65, 74, 0.6);
 }
 .capitulo h4{
   font-family: 'Merriweather', serif;
@@ -313,6 +315,7 @@ footer p{
     font-size: 10vw;
     width: 90vw;
     margin: 6vw auto;
+    padding: 2vw 5vw;
   }
   .capitulo h4{
     font-size: 7.5vw;
