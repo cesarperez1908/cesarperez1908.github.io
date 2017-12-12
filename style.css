@@ -290,7 +290,7 @@ footer p{
   }
   .home{ 
    display: none;
-   padding: 3px;
+   padding: 0px;
    background; #E1F7E7;
    font-size: 30px;
    color: #0284A8;
