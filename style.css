@@ -9,6 +9,18 @@ body{
   background: transparent url('assets/concrete-texture.png') repeat;
   overflow-x: hidden;
 }
+
+.home{ 
+   display: none;
+   padding: 20px;
+   background; #024959;
+   font-size: 20px;
+   color: #fff;
+   cursor: pointer;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+  }
 header{
   height: 100vh;
   background: transparent url(assets/portada/portada.jpg) no-repeat center center;
