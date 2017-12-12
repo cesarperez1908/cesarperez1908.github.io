@@ -13,8 +13,8 @@ body{
 .home{ 
    display: none;
    padding: 20px;
-   background; #024959;
-   font-size: 100vw;
+   background; #E1F7E7;
+   font-size: 100px;
    color: #050C42;
    cursor: pointer;
    position: fixed;
