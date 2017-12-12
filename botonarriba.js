@@ -2,12 +2,12 @@ $(document).ready(function(){
  
 	$('.home').click(function(){
 		$('body, html').animate({
-			scrollTop: '100vw'
+			scrollTop: '500vw'
 		}, 2000);
 	});
  
 	$(window).scroll(function(){
-		if( $(this).scrollTop() > 100 ){
+		if( $(this).scrollTop() > 500 ){
 			$('.home').slideDown(2000);
 		} else {
 			$('.home').slideUp(2000);
