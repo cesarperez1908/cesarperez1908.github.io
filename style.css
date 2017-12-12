@@ -58,13 +58,15 @@ h2{
 }
 .navegacion-item{
   width:28vw;
-  height: 130vh;
+  height: 140vh;
   display: inline-block;
   background-color: blue;
   border: solid 0.2vw #000;
   transform: rotateZ(22deg);
   position: relative;
   transition: 1s;
+  cursor: pointer;
+  overflow: hidden;
 }
   .navegacion-item:hover{
     transform: rotateZ(22deg) scale(1.05);
@@ -77,31 +79,73 @@ h2{
   text-transform: uppercase;
   position: absolute;
   width: 20vw;
-  left: 3vw;
+  left: 4vw;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-
+.fondo{
+  position: absolute;
+  width: 55vw;
+  height: 110vh;
+  transform: rotateZ(-22deg);
+  top: 5vw;
+  left: -15vw;
+}
 .navegacion-item:first-child, .navegacion-item:last-child{
   width: 32vw;
 }
 .navegacion-item:first-child h5{
   top: 12vw;
 }
+.navegacion-item:first-child .fondo{
+  position: absolute;
+  width: 40vw;
+  height: 110vh;
+  transform: rotateZ(-22deg);
+  top: 3vw;
+  left: 8vw;
+}
 .navegacion-item:nth-child(2) h5{
-  top: 30vw;
+  top: 25vw;
 }
 .navegacion-item:nth-child(3) h5{
-  top: 45vw;
+  top: 35vw;
 }
 .navegacion-item:last-child h5{
-  top: 65vw;
+  top: 50vw;
 }
-
+.navegacion-item:last-child .fondo{
+  position: absolute;
+  width: 37vw;
+  height: 110vh;
+  transform: rotateZ(-22deg);
+  top: 12.5vw;
+  left: -13vw;
+}
+#imagen-origen{
+  background: url('assets/portada/origen.jpg') center center no-repeat;
+  background-size: cover;
+}
+#imagen-opositores{
+  background: url('assets/portada/opositores.jpg') center center no-repeat;
+  background-size: cover;
+}
+#imagen-relleno{
+  background: url('assets/portada/relleno.jpg') center center no-repeat;
+  background-size: cover;
+}
+#imagen-habitantes{
+  background: url('assets/portada/habitantes.jpg') center center no-repeat;
+  background-size: cover;
+}
+.capitulo{
+  padding-top: 4vw;
+}
 .capitulo h3{
   font-family: 'Merriweather', serif;
   font-size: 3vw;
   font-weight: 700;
   width: 60vw;
-  margin: 4vw auto;
+  margin: 0 auto 4vw;
   text-align: center;
   text-transform: uppercase;
 }
@@ -122,7 +166,7 @@ h2{
 .galeria{
   width: 100vw;
   height: 56vw;
-  margin: 2vw auto;
+  margin: 6vw auto;
 }
 .galeria.salvador{
   background: transparent url('assets/galerias/salvador1.jpg') no-repeat center center;
@@ -149,7 +193,7 @@ iframe{
   width: 80vw;
   height: 45vw;
   display: block;
-  margin: 2vw auto;
+  margin: 4vw auto;
 }
 footer{
   padding: 1.5vw 0;
@@ -229,6 +273,38 @@ footer p{
     width: 80vw;
     top: 74vh;
     left: 7vw;
+  }
+  .navegacion-container {
+    position: absolute;
+    top: -6vw;
+    left: -5vw;
+    width: 110vw;
+  }
+  .navegacion-item, .navegacion-item:first-child, .navegacion-item:last-child{
+    width: 105vw;
+    transform: rotateZ(-5deg);
+    height: 25vh;
+  }
+  .navegacion-item:first-child, .navegacion-item:last-child{
+    height: 27vh;
+  }
+  .fondo, .navegacion-item:first-child .fondo, .navegacion-item:last-child .fondo{
+    width: 105vw;
+    height: 32vh;
+    transform: rotateZ(5deg);
+    top: -5vw;
+    left: 0;
+  }
+  .navegacion-item:first-child .fondo{
+    top: 5vw;
+  }
+  .navegacion-item h5, .navegacion-item:first-child h5, .navegacion-item:nth-child(2) h5, .navegacion-item:nth-child(3) h5, .navegacion-item:last-child h5{
+    transform: rotateZ(5deg);
+    font-size: 5vw;
+    width: 50vw;
+    top: 24vw;
+    right: 3vw;
+    left: auto;
   }
   .capitulo h3{
     font-size: 10vw;
