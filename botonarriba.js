@@ -2,7 +2,7 @@ $(document).ready(function(){
  
 	$('.home').click(function(){
 		$('body, html').animate({
-			scrollTop: '1000vw'
+			scrollTop: '1000px'
 		}, 2000);
 	});
  
