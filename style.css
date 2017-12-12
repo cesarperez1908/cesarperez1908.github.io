@@ -285,6 +285,9 @@ footer p{
     transform: rotateZ(-5deg);
     height: 25vh;
   }
+  .navegacion-item:hover{
+    transform: rotateZ(-5deg);
+  }
   .navegacion-item:first-child, .navegacion-item:last-child{
     height: 27vh;
   }
