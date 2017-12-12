@@ -296,7 +296,7 @@ footer p{
    color: #0284A8;
    cursor: pointer;
    position: fixed;
-   bottom: 5px;
+   bottom: 10px;
    right: 5px;
   }
   .navegacion-container {
